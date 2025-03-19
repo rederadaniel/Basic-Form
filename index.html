@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Basic Form | Performance Task #3</title>
+<link rel="icon" href="glow.gif" type="image/gif" sizes="16x16">
+
+<link rel="stylesheet" href="style.css">
+
+ </head> <body>
+
+    <div class="container">
+        <h2>JavaScript Validation</h2>
+        <form id="userForm">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="middleName">Middle Name:</label>
+            <input type="text" id="middleName" name="middleName">
+
+            <label>Gender:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> All of the Above</label>
+            </div>
+
+            <div class="checkbox-group">
+                <h3>How do you go to school?</h3>
+
+                <label><input type="checkbox" name="transportation" value="Bike"> I ride a bike</label>
+                <label><input type="checkbox" name="transportation" value="Car"> I drive a car</label>
+                <label><input type="checkbox" name="transportation" value="Bus"> I take the bus</label>
+                <label><input type="checkbox" name="transportation" value="Walking"> I walk</label>
+            </div> <br>
+            
+            <label for="birthMonth">In what month were you born?</label>
+            <select id="birthMonth" required>
+                <option selected disabled>-- Select Month --</option>
+                <option>January</option><option>February</option><option>March</option>
+                <option>April</option><option>May</option><option>June</option>
+                <option>July</option><option>August</option><option>September</option>
+                <option>October</option><option>November</option><option>December</option>
+            </select> <br>
+
+            <!-- About Yourself -->
+            <label for="about">Please say something about yourself:</label>
+            <textarea id="about" placeholder="Write your comment here..." rows="5" required></textarea>
+            <br>
+            <!-- Buttons -->
+            <div class="btn-group">
+                <button type="button" class="reset-btn" onclick="resetComment()">Reset Comment</button>
+                <button type="reset" class="reset-btn">Reset Form</button>
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+
+            <script src="main.js"></script>
+
+</body> </html>
